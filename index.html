@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #84bdef;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .device {
+            background-color: #23a0ff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Smart Home Control</h1>
+    </header>
+
+    <section>
+        <div class="device">
+            <h2>Smart Lights</h2>
+            <button onclick="toggleLights()">Toggle Lights</button>
+        </div>
+
+        <div class="device">
+            <h2>Smart Thermostat</h2>
+            <label for="temperature">Set Temperature:</label>
+            <input type="number" id="temperature" placeholder="Enter temperature">
+            <button onclick="setTemperature()">Set Temperature</button>
+        </div>
+    </section>
+
+    <script>
+        function toggleLights() {
+            // Implement logic to toggle smart lights
+            alert("Lights toggled!");
+        }
+
+        function setTemperature() {
+            var temperature = document.getElementById("temperature").value;
+            // Implement logic to set smart thermostat temperature
+            alert("Temperature set to " + temperature + "°C");
+        }
+    </script>
+
+</body>
+
+</html>
